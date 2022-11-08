@@ -8,9 +8,11 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/mfsiat/go_api/database"
 )
 
 func main() {
+	database.ConnectDb()
 	// Fiber instance
 	app := fiber.New()
 
