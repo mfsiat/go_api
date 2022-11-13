@@ -19,6 +19,8 @@ func main() {
 	// Routes
 	app.Get("/", hello)
 
+	setupRoutes(app)
+
 	// Start server
 	log.Fatal(app.Listen(":3000"))
 }

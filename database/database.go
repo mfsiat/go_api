@@ -6,7 +6,6 @@ import (
 	"os"
 
 	"github.com/mfsiat/go_api/models"
-
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
