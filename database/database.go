@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-
 	"github.com/mfsiat/go_api/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -25,7 +24,7 @@ func ConnectDb() {
 	)
 
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{
-		Logger: logger.Default.LogMode(logger.Info)
+		Logger: logger.Default.LogMode(logger.Info),
 	})
 
 	if err != nil {
